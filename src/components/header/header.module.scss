@@ -1,0 +1,14 @@
+.header {
+    position: absolute !important;
+    width: 100%;
+    z-index: 999;
+    height: 80px;
+
+    .navLink {
+        font-size: 20px;
+        padding: 0 15px !important;
+        text-decoration: none !important;
+        font-weight: 500;
+        color: #fff;
+    }
+}

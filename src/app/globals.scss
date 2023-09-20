@@ -1,0 +1,73 @@
+/* make the customizations */
+
+// Color system
+$white: #fff !default;
+$gray: #6D6D6D;
+$black: #171B1A !default;
+$pink: #C0335D !default;
+
+$primary: $black !default;
+$secondary: $pink !default;
+$gray: $gray !default;
+
+
+@import '~bootstrap/scss/bootstrap';
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Unica One', cursive;
+}
+
+h2 {
+  font-family: 'Unica One', cursive;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: calc(100vh);
+}
+
+.carousel-caption {
+  right: 35%;
+  top: 35%;
+}
+
+@media (max-width: 750px) {
+  .carousel-caption {
+    top: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  .carousel-caption {
+    width: 80%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.7rem;
+  }
+}
