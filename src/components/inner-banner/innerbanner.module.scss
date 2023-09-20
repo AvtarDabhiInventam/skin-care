@@ -1,0 +1,26 @@
+.inner_banner_main_div {
+    position: relative;
+    img {
+        width: 100% !important;
+        height: 100vh !important;
+        object-fit: cover;
+    }
+}
+.banner_contain_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 15px;
+    .banner_heading {
+        color: var(--white);
+        text-align: center;
+        font-family: Unica One;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}

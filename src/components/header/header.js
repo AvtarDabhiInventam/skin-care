@@ -4,15 +4,18 @@ import { Navbar, Nav } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import styles from "./header.module.scss";
 import { Link } from "react-router-dom";
+import Image from "next/image";
 
 function Header() {
   return (
-    <Navbar
-      expand="lg"
-      className={`${styles.header} px-4 text-uppercase`}
-    >
+    <Navbar expand="lg" className={`${styles.header} px-4 text-uppercase`}>
       <Navbar.Brand href="#home">
-        <img src={logo} alt="logo" />
+        <Image
+          src={logo}
+          alt="Logo"
+          width={125}
+          height={96}
+        />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

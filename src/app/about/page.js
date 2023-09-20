@@ -1,7 +1,10 @@
+import InnerBanner from "@/components/inner-banner";
 import React from "react";
 
 const Page = () => {
-  return <div>Page</div>;
+  return <>
+    <InnerBanner />
+  </>;
 };
 
 export default Page;
