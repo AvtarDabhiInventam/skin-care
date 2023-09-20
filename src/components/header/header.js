@@ -25,8 +25,8 @@ function Header() {
               Home
             </Nav.Link>
           </Link>
-          <Link to="/admission">
-            <Nav.Link href="/admission" className={styles.navLink}>
+          <Link to="/about">
+            <Nav.Link href="/about" className={styles.navLink}>
               About
             </Nav.Link>
           </Link>
