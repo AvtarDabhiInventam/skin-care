@@ -1,0 +1,98 @@
+@import '../../app/variable.scss';
+
+.inner_banner_main_div {
+    position: relative;
+    img {
+        width: 100% !important;
+        height: 100vh !important;
+        object-fit: cover;
+    }
+}
+.inner_banner_main_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.3;
+}
+.banner_contain_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    .banner_heading {
+        color: $white;
+        text-align: center;
+        font-family: Unica One;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .inner_banner_main_div {
+        position: relative;
+        img {
+            width: 100% !important;
+            height: 500px !important;
+            object-fit: cover;
+        }
+    }
+    .banner_contain_div {
+        top: 60%;
+            .banner_heading {
+                font-size: 40px;
+                margin-bottom: 0px;
+            }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .inner_banner_main_div {
+        img {
+            height: 500px !important;
+        }
+    }
+    .banner_contain_div {
+        top: 60%;
+            .banner_heading {
+                font-size: 44px;
+                margin-bottom: 0px;
+            }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+    .inner_banner_main_div {
+        img {
+            height: 500px !important;
+        }
+    }
+    .banner_contain_div {
+        top: 60%;
+            .banner_heading {
+                font-size: 52px;
+                margin-bottom: 0px;
+            }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+    .banner_contain_div {
+        top: 55%;
+            .banner_heading {
+                font-size: 75px;
+            }
+    }
+  }
