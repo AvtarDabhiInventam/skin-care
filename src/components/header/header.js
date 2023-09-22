@@ -5,17 +5,14 @@ import logo from "../../images/logo.png";
 import styles from "./header.module.scss";
 import { Link } from "react-router-dom";
 import Image from "next/image";
+import { MdLogout, MdSearch } from "react-icons/md";
+import { BiSolidUser } from "react-icons/bi";
 
 function Header() {
   return (
     <Navbar expand="lg" className={`${styles.header} px-4 text-uppercase`}>
       <Navbar.Brand href="#home">
-        <Image
-          src={logo}
-          alt="Logo"
-          width={125}
-          height={96}
-        />
+        <Image src={logo} alt="logo" height={90} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -48,10 +45,13 @@ function Header() {
         </Nav>
         <Nav>
           <Nav.Link href="#deets" className={styles.navLink}>
-            More deets
+            <MdSearch fontSize={30} />
           </Nav.Link>
           <Nav.Link eventKey={2} href="#memes" className={styles.navLink}>
-            Dank memes
+            <BiSolidUser fontSize={30} />
+          </Nav.Link>
+          <Nav.Link eventKey={2} href="#memes" className={styles.navLink}>
+            <MdLogout fontSize={30} />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

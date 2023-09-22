@@ -1,0 +1,39 @@
+@import '../../styles/variable.scss';
+.footer_list_title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 43px;
+    color: $primary;
+    margin-bottom: 30px;
+}
+.footer_link_group {
+    padding: 0;
+}
+.footer_link_group_item {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: $gray;
+    margin-bottom: 15px;
+}
+.footer_copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #898989;
+    color: $gray;
+}
+.socailIcons li{
+    display: inline-block;
+    margin-right: 15px;
+}
+@media only screen and (max-width: 991px) {
+    .footer_list {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .footer_list {
+        margin-bottom: 30px;
+    }
+}

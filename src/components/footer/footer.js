@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import logo from "../../images/logo.png";
-// import "./footer.css";
+import styles from "./footer.module.scss";
+import { FaCcMastercard } from "react-icons/fa6";
+import { RiVisaLine } from "react-icons/ri";
+
+
 // import MapContainer from "./MapContainer";
 import Image from "next/image";
 
@@ -16,61 +20,51 @@ function Footer() {
         <Row className="mt-5">
           <Col
             sm={6}
-            md={4}
-            data-aos="fade-right"
-            className="mx-auto  d-flex justify-content-start  flex-column flex-wrap"
+            md={3}
           >
             <Image src={logo} height={110} />
-            {/* <h4 className="mt-3 text-center">
-              University of <br /> York
-            </h4> */}
             <p className="mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              Lorem ipsum dolorc sacsa sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum.
             </p>
+            <Button variant="primary">Contact us</Button>
           </Col>
-          <Col
-            sm={6}
-            md={4}
-            data-aos="fade-left"
-            className="d-flex mt-3 justify-content-start  flex-column flex-wrap"
-          >
-            <h3 className="mb-2 text-capitalize text-start">Free Yourself</h3>
-            <div
-              className="justify-content-start align-items-center flex-column"
-              
-            >
-              <p class="d-flex flex-wrap">
-                <span class="mr-4 footer-icon">
-                  <i class="fas fa-map"></i>
-                </span>
-                <span>803, Valentina Business Hub, </span>
-              </p>
-              <p class="d-flex flex-wrap">
-                <span class="mr-4 footer-icon">
-                  <i class="fas fa-phone"></i>
-                </span>
-                <span>094297 96373 </span>
-              </p>
-              <p class="d-flex flex-wrap">
-                <span class="mr-4 footer-icon">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span>enolaholmes@email.com</span>
-              </p>
-            </div>
-          </Col>
-          <Col
-            sm={6}
-            md={4}
-            data-aos="fade-left"
-            className="mx-auto mt-3 d-flex justify-content-start  flex-column flex-wrap"
-          >
-            <h3 className="mb-2">Company</h3>
-
-     
-          </Col>
+          <Col xs={12} sm={6} md={6} lg={3}>
+              <div className={styles.footer_list}>
+                <h4 className={styles.footer_list_title}> Free Yourself </h4>
+                <ul className={styles.footer_link_group}>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Skin care</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Serum</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Moisturizer</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Lip balm</a> </li>
+                </ul>
+              </div>
+            </Col>
+          <Col xs={12} sm={6} md={6} lg={3}>
+              <div className={styles.footer_list}>
+                <h4 className={styles.footer_list_title}> Company </h4>
+                <ul className={styles.footer_link_group}>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Cake & Milks</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Dairy Products</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Package Foods</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Beverage</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Health & Wellness</a> </li>
+                </ul>
+              </div>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3}>
+              <div className={styles.footer_list}>
+                <h4 className={styles.footer_list_title}> Follow Us </h4>
+                <ul className={styles.footer_link_group}>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Cake & Milks</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Dairy Products</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Package Foods</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Beverage</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Health & Wellness</a> </li>
+                </ul>
+              </div>
+            </Col>
         </Row>
         <hr />
       </Container>
@@ -79,32 +73,27 @@ function Footer() {
           <Col md={8} sm={6} xs={12}>
             <p class="copyright-text">
               Copyright &copy; 2023 All Rights Reserved by
-              <a href="#copyright"> Inventam Company</a>.
+              <a href="#copyright"> Inventam Company</a>
             </p>
           </Col>
           <Col md={4} sm={6} xs={12}>
-            {/* <ul class="social-icons">
+            <ul className={`${styles.socailIcons} list-unstyled text-end`}>
               <li>
-                <a class="facebook" href="#fb">
-                  <i class="fab fa-facebook-f"></i>
+                <a class="" href="#fb">
+                Accepted Payments
                 </a>
               </li>
               <li>
                 <a class="twitter" href="#twitter">
-                  <i class="fab fa-twitter"></i>
+                  <FaCcMastercard fontSize={25}/>
                 </a>
               </li>
               <li>
                 <a class="dribbble" href="#dribble">
-                  <i class="fab fa-dribbble"></i>
+                  <RiVisaLine fontSize={25}/>
                 </a>
               </li>
-              <li>
-                <a class="linkedin" href="#linkedin">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul> */}
+            </ul>
           </Col>
         </Row>
       </Container>

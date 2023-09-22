@@ -1,7 +1,8 @@
 "use client";
 import Header from "@/components/header/header";
-import "./globals.scss";
+import "../styles/globals.scss";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "@/components/footer/footer";
 
 export default function RootLayout({ children }) {
   return (
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
         <BrowserRouter>
           <Header />
           {children}
-          <header>Footer</header>
+          <Footer/>
         </BrowserRouter>
       </body>
     </html>

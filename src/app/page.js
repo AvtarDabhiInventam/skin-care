@@ -1,18 +1,13 @@
 "use client";
-import Link from "next/link";
-import styles from "./page.module.scss";
-import Slider from "./slider";
-import AboutUs from "./aboutus";
-import Footer from "@/components/footer/footer";
-import { Button } from "react-bootstrap";
-
+import Slider from "@/components/home/slider";
+import SkinType from "@/components/home/skintype";
+import RecommendationProduct from "@/components/home/recommendation-product";
 export default function Home() {
   return (
     <main>
       <Slider />
-      <AboutUs />
-      <Footer/>
-      <Button>Button</Button>
-    </main>
+      <SkinType/>
+      <RecommendationProduct/>
+    </main>      
   );
 }
