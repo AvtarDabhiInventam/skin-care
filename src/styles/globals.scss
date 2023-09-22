@@ -78,6 +78,28 @@ h2 {
   padding: 0px;
 }
 
+.zindex_div {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-color {
+  background-color: $graybgcolor;
+}
+
+.common_sec_heading {
+  color: $black;
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 30px;
+  span {
+    font-weight: 600;
+  }
+}
+
 
 .about_sec_div {
   position: relative;
@@ -92,32 +114,125 @@ h2 {
 // Media Query
 
 @media (max-width: 767px) {
+  .common-padding {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
   .common-btn {
       min-width: 180px !important;
       padding: 15px 20px !important;
       font-size: 18px !important;
   }
+  .common_sec_heading {
+    font-size: 44px;
+    margin-bottom: 25px;
+  }
+  .common-para {
+    font-size: 16px;
+  }
+  .section-heading {
+      font-size: 44px;
+      margin-bottom: 25px;
+  }
+  .about_sec_div .about_shape_img {
+      max-width: 150px;
+      z-index: -1;
+  }
+  .rowgap_30 {
+    row-gap: 30px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px)  {
-    .common-btn {
+  .common-padding {
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }  
+  .common-btn {
       min-width: 180px !important;
       padding: 20px 20px !important;
       font-size: 18px !important;
   }
+  .common_sec_heading {
+    font-size: 44px;
+  }
+  .common-para {
+    font-size: 17px;
+  }
+  .section-heading {
+      font-size: 44px;
+  }
+  .about_sec_div .about_shape_img {
+      max-width: 200px;
+      z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px)  {
+  .common-padding {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
   .common-btn {
       min-width: 200px !important;
       padding: 22px 20px !important;
       font-size: 18px !important;
   }
+  .common_sec_heading {
+    font-size: 50px;
+  }
+  .common-para {
+    font-size: 17px;
+  }
+  .section-heading {
+      font-size: 50px;
+  }
+  .about_sec_div .about_shape_img {
+      max-width: 210px;
+      z-index: -1;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+  .common-padding {
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
   .common-btn {
       min-width: 220px !important;
       padding: 24px 20px !important;
+  }
+  .common_sec_heading {
+    font-size: 58px;
+  }
+  .common-para {
+    font-size: 18px;
+  }
+  .section-heading {
+    font-size: 58px;
+  }
+  .about_sec_div .about_shape_img {
+      max-width: 230px;
+      z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1660px)  {
+  .common-padding {
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+  .common_sec_heading {
+    font-size: 62px;
+  }
+  .common-para {
+    font-size: 18px;
+  }
+  .section-heading {
+    font-size: 62px;
+  }
+  .about_sec_div .about_shape_img {
+      max-width: 260px;
+      z-index: -1;
   }
 }
