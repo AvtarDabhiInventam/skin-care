@@ -34,6 +34,37 @@ h2 {
   font-family: 'Unica One', cursive;
 }
 
+.common-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.common-btn {
+  min-width: 250px;
+  text-align: center;
+  padding: 28px 35px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section-heading {
+  color: $black;
+  font-family: 'Unica One', cursive;
+  font-size: 56px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.common-para {
+  color: $gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
 .navbar-brand {
   padding: 0px;
 }
@@ -47,9 +78,29 @@ h2 {
   top: 35%;
 }
 
-@media (max-width: 750px) {
+.about_sec_div {
+  position: relative;
+  .about_shape_img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+
+
+
+// Media Query
+
+
+@media (max-width: 767px) {
   .carousel-caption {
     top: 20%;
+  }
+  .common-btn {
+      min-width: 180px !important;
+      padding: 15px 20px !important;
+      font-size: 18px !important;
   }
 }
 
@@ -60,5 +111,28 @@ h2 {
 
   .carousel-caption h1 {
     font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .common-btn {
+      min-width: 180px !important;
+      padding: 20px 20px !important;
+      font-size: 18px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+  .common-btn {
+      min-width: 200px !important;
+      padding: 22px 20px !important;
+      font-size: 18px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+  .common-btn {
+      min-width: 220px !important;
+      padding: 24px 20px !important;
   }
 }
