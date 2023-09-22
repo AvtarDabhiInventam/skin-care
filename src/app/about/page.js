@@ -2,6 +2,10 @@ import InnerBanner from "@/components/inner-banner";
 import Image from "next/image";
 import React from "react";
 import shapeimg from "../../images/shape.png";
+import SkinAbout from "@/components/about/skin-about";
+import CareProduct from "@/components/care-product/care-product";
+import OurTeam from "@/components/about/ourteam";
+import Testimonial from "@/components/testimonial/testimonial";
 
 const Page = () => {
   return (
@@ -30,6 +34,14 @@ const Page = () => {
         </div>
         <Image src={shapeimg} alt="shape" width={333} height={225} className="about_shape_img" />
       </div>
+
+      <SkinAbout />
+
+      <CareProduct/>
+
+      <OurTeam />
+
+      <Testimonial/>
     </>
   );
 };
