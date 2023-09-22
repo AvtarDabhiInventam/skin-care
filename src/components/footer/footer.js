@@ -18,17 +18,14 @@ function Footer() {
     >
       <Container>
         <Row className="mt-5">
-          <Col
-            sm={6}
-            md={3}
-          >
+          <Col xs={12} sm={6} md={6} lg={3} >
             <Image src={logo} height={110} />
             <p className="mt-2">
               Lorem ipsum dolorc sacsa sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum.
             </p>
-            <Button variant="primary">Contact us</Button>
+            <Button variant="primary" className="common-btn">Contact us</Button>
           </Col>
           <Col xs={12} sm={6} md={6} lg={3}>
               <div className={styles.footer_list}>

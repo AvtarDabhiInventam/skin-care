@@ -1,0 +1,59 @@
+@import '../../styles/variable.scss';
+
+.testimonial_sec_div {
+    position: relative;
+}
+.testimonial_sec_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $bgcolor2; 
+}
+.testimonial_box_div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F0F0F0;
+    background-color: $white;
+}
+.testimonial_contain_div {
+    padding: 20px 25px;
+}
+.testimonial_img_div {
+    min-width: 196px;
+}
+.testimonial_para {
+    color: $gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.client_name {
+    color: $pink;
+    font-family: 'Unica One', cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 767px) {
+    .testimonial_img_div {
+        min-width: 85px;
+    }
+    .testimonial_para {
+        font-size: 15px;
+    }
+    .client_name {
+        font-size: 20px;
+    }
+    .testimonial_sec_div::before {
+        width: 80%;
+    }
+}

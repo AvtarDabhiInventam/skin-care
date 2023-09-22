@@ -1,0 +1,131 @@
+@import '../../styles/variable.scss';
+
+.skin_about_sec_div {
+    position: relative;
+}
+.skin_about_sec_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: $bgcolor;
+}
+.skin_about_img {
+    img {
+        width: auto !important;
+        max-width: 90%;
+    }
+}
+.contain_sec {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.img_div {
+    img {
+        width: 100% !important;
+    }
+    .heading_text {
+        color: $black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+    .team_qualification {
+        color: $gray;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contain_sec {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .skin_about_sec_div::before { 
+        width: 100%;
+    }
+    .skin_about_img {
+        img {
+            width: 100% !important;
+            max-width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .img_div {
+        .heading_text {
+            font-size: 20px;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+    }
+}
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .contain_sec {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .skin_about_img {
+        img {
+            width: 100% !important;
+            max-width: 95%;
+        }
+    }
+    .img_div {
+        .heading_text {
+            font-size: 24px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+    }
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px)  {
+    .contain_sec {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .skin_about_img {
+        img {
+            width: 100% !important;
+            max-width: 95%;
+        }
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+    .contain_sec {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .skin_about_img {
+        img {
+            width: 100% !important;
+            max-width: 90%;
+        }
+    }
+  }
+
+  @media only screen and (min-width: 1441px) and (max-width: 1660px)  {
+    .contain_sec {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .skin_about_img {
+        img {
+            width: 100% !important;
+            max-width: 90%;
+        }
+    }
+  }
