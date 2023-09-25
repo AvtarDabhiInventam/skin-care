@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./about.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import Teamimg1 from "../../images/team-img1.png";
+import Teamimg1 from "../../images/team-imgs1.png";
 import Teamimg2 from "../../images/team-img2.png";
 import Teamimg3 from "../../images/team-img3.png";
 import Teamimg4 from "../../images/team-img4.png";
