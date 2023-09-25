@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import {
   Navbar,
   Nav,
@@ -17,58 +17,25 @@ import { MdLogout, MdSearch, MdMenu } from "react-icons/md";
 import { BiSolidUser } from "react-icons/bi";
 
 function Header() {
+  const stickyHeader = useRef();
+  useEffect(() => {
+    const fixedHeader = () => {
+      const mainHeader = document.getElementById('mainHeader')
+      let clientHeight = stickyHeader.current.clientHeight
+      if (document.body.scrollTop > clientHeight) {
+        mainHeader.classList.add('fixedTop')
+      } else {
+        mainHeader.classList.remove('fixedTop')
+      }
+    }
+    window.addEventListener('scroll', fixedHeader,true)
+  }, [window.screenY])
   return (
     <>
-      {/* <Navbar expand="lg" className={`${styles.header} px-4 text-uppercase`}>
-        <Navbar.Brand href="#home">
-          <Image src={logo} alt="logo" height={90} />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
-            <Link to="/">
-              <Nav.Link href="#home" className={styles.navLink}>
-                Home
-              </Nav.Link>
-            </Link>
-            <Link to="/about">
-              <Nav.Link href="/about" className={styles.navLink}>
-                About
-              </Nav.Link>
-            </Link>
-            <Link to="/faculty">
-              <Nav.Link href="/faculty" className={styles.navLink}>
-                Shop
-              </Nav.Link>
-            </Link>
-            <Link to="/about">
-              <Nav.Link href="/about" className={styles.navLink}>
-                Futures
-              </Nav.Link>
-            </Link>
-            <Link to="/contact">
-              <Nav.Link href="/contact" className={styles.navLink}>
-                Scan Your Skin
-              </Nav.Link>
-            </Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets" className={styles.navLink}>
-              <MdSearch fontSize={30} />
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" className={styles.navLink}>
-              <BiSolidUser fontSize={30} />
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" className={styles.navLink}>
-              <MdLogout fontSize={30} />
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar> */}
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className={`${styles.header} bg-body-tertiary`}>
+        <Navbar key={expand} expand={expand} className={`${styles.header} `} ref={stickyHeader} id="mainHeader">
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <Image src={logo} alt="logo" height={90} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>

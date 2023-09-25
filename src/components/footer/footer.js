@@ -8,6 +8,7 @@ import { RiVisaLine } from "react-icons/ri";
 
 // import MapContainer from "./MapContainer";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -44,11 +45,12 @@ function Footer() {
               <div className={styles.footer_list}>
                 <h4 className={styles.footer_list_title}> Company </h4>
                 <ul className={styles.footer_link_group}>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Cake & Milks</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Dairy Products</a> </li>
+                  <li className={styles.footer_link_group_item}> <Link href='/about'>About Us</Link> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Chat</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Scan</a> </li>
                   <li className={styles.footer_link_group_item}> <a href='#'>Package Foods</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Beverage</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Health & Wellness</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Contact Us</a> </li>
+ 
                 </ul>
               </div>
             </Col>
@@ -56,11 +58,11 @@ function Footer() {
               <div className={styles.footer_list}>
                 <h4 className={styles.footer_list_title}> Follow Us </h4>
                 <ul className={styles.footer_link_group}>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Cake & Milks</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Dairy Products</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Package Foods</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Beverage</a> </li>
-                  <li className={styles.footer_link_group_item}> <a href='#'>Health & Wellness</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Instagram</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Facebook</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Twitter</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Linkedin</a> </li>
+                  <li className={styles.footer_link_group_item}> <a href='#'>Google</a> </li>
                 </ul>
               </div>
             </Col>
