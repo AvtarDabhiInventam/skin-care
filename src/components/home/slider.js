@@ -15,7 +15,7 @@ function Slider() {
               <Image
                 className="d-block w-100"
                 src={banner1}
-                fluid
+                fluid="true"
                 style={{ objectFit: "cover" }}
                 alt="banner"
               />
@@ -28,7 +28,7 @@ function Slider() {
                 <h1> Love your skin, love yourself </h1>
                 <p>Quality skincare products for men and women to your door</p>
                 <Button variant="light" className="common-btn">
-                  Buy Now
+                  Scan Now
                 </Button>
               </Carousel.Caption>
             </Carousel.Item>
@@ -36,7 +36,7 @@ function Slider() {
               <Image
                 className="d-block w-100"
                 src={banner1}
-                fluid
+                fluid="true"
                 style={{ objectFit: "cover" }}
                 alt="banner"
               />
@@ -48,7 +48,7 @@ function Slider() {
                 <h1>Second slide label</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <Button variant="light" className="common-btn">
-                  Buy Now
+                  Scan Now
                 </Button>
               </Carousel.Caption>
             </Carousel.Item>
@@ -56,7 +56,7 @@ function Slider() {
               <Image
                 className="d-block w-100"
                 src={banner1}
-                fluid
+                fluid="true"
                 style={{ objectFit: "cover" }}
                 alt="banner"
               />
@@ -71,7 +71,7 @@ function Slider() {
                   consectetur.
                 </p>
                 <Button variant="light" className="common-btn">
-                  Buy Now
+                  Scan Now
                 </Button>
               </Carousel.Caption>
             </Carousel.Item>

@@ -11,7 +11,7 @@ const AboutProduct = () => {
                     <Col xs lg="6">
                         <div className={`${styles.about_product_contain_box}`}>
                             <h6>Stop stressing out over buying your personal care products</h6>
-                            <Button variant="primary" className="common-btn">Buy Now</Button>
+                            <Button variant="primary" className="common-btn">Scan Now</Button>
                         </div>
                     </Col>
                 </Row>

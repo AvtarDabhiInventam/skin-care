@@ -79,17 +79,17 @@ function Footer() {
           <Col md={4} sm={6} xs={12}>
             <ul className={`${styles.socailIcons} list-unstyled text-end`}>
               <li>
-                <a class="" href="#fb">
+                <a className="" href="#fb">
                 Accepted Payments
                 </a>
               </li>
               <li>
-                <a class="twitter" href="#twitter">
+                <a className="twitter" href="#twitter">
                   <FaCcMastercard fontSize={25}/>
                 </a>
               </li>
               <li>
-                <a class="dribbble" href="#dribble">
+                <a className="dribbble" href="#dribble">
                   <RiVisaLine fontSize={25}/>
                 </a>
               </li>

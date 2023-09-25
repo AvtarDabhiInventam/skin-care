@@ -15,7 +15,7 @@ const SkinType = () => {
       <Row>
         <Col xs={12} lg={6} md={6} className="pe-0">
           <div>
-            <Image src={skin1} fluid className={`${styles.skinImage}`} alt="skin"/>
+            <Image src={skin1} fluid="true" className={`${styles.skinImage}`} alt="skin"/>
           </div>
         </Col>
         <Col xs={12} lg={6} md={6} className="ps-0">
@@ -44,14 +44,14 @@ const SkinType = () => {
         </Col>
         <Col xs={12} lg={6} md={6} className="ps-0">
           <div>
-            <Image src={skin2} fluid className={`${styles.skinImage}`} alt="skin"/>
+            <Image src={skin2} fluid="true" className={`${styles.skinImage}`} alt="skin"/>
           </div>
         </Col>
       </Row>
       <Row>
         <Col xs={12} lg={6} md={6} className="pe-0">
           <div>
-            <Image src={skin3} fluid className={`${styles.skinImage}`} alt="skin"/>
+            <Image src={skin3} fluid="true" className={`${styles.skinImage}`} alt="skin"/>
           </div>
         </Col>
         <Col xs={12} lg={6} md={6} className="ps-0">

@@ -34,7 +34,7 @@ const Testimonial = () => {
       <div className={`${styles.testimonial_sec_div} common-padding`}>
         <Container className="zindex_div">
           <h2 className="section-heading">
-            We don’t just care about skin. <br />
+            We dont just care about skin. <br />
             we care about you.
           </h2>
           <div className="testimonial_slider_div">
@@ -51,7 +51,7 @@ const Testimonial = () => {
                   </div>
                   <div className={`${styles.testimonial_contain_div}`}>
                     <p className={`${styles.testimonial_para}`}>
-                      I don’t wear makeup very often, but when I do I go for a
+                      I dont wear makeup very often, but when I do I go for a
                       natural, no-makeup look. This skin tint and concealer
                       gives exactly that. It helps even out my skin tone and
                       looks very natural.
@@ -72,7 +72,7 @@ const Testimonial = () => {
                   </div>
                   <div className={`${styles.testimonial_contain_div}`}>
                     <p className={`${styles.testimonial_para}`}>
-                      I don’t wear makeup very often, but when I do I go for a
+                      I dont wear makeup very often, but when I do I go for a
                       natural, no-makeup look. This skin tint and concealer
                       gives exactly that. It helps even out my skin tone and
                       looks very natural.
@@ -93,7 +93,7 @@ const Testimonial = () => {
                   </div>
                   <div className={`${styles.testimonial_contain_div}`}>
                     <p className={`${styles.testimonial_para}`}>
-                      I don’t wear makeup very often, but when I do I go for a
+                      I dont wear makeup very often, but when I do I go for a
                       natural, no-makeup look. This skin tint and concealer
                       gives exactly that. It helps even out my skin tone and
                       looks very natural.
@@ -114,7 +114,7 @@ const Testimonial = () => {
                   </div>
                   <div className={`${styles.testimonial_contain_div}`}>
                     <p className={`${styles.testimonial_para}`}>
-                      I don’t wear makeup very often, but when I do I go for a
+                      I dont wear makeup very often, but when I do I go for a
                       natural, no-makeup look. This skin tint and concealer
                       gives exactly that. It helps even out my skin tone and
                       looks very natural.
@@ -135,7 +135,7 @@ const Testimonial = () => {
                   </div>
                   <div className={`${styles.testimonial_contain_div}`}>
                     <p className={`${styles.testimonial_para}`}>
-                      I don’t wear makeup very often, but when I do I go for a
+                      I dont wear makeup very often, but when I do I go for a
                       natural, no-makeup look. This skin tint and concealer
                       gives exactly that. It helps even out my skin tone and
                       looks very natural.
@@ -156,7 +156,7 @@ const Testimonial = () => {
                   </div>
                   <div className={`${styles.testimonial_contain_div}`}>
                     <p className={`${styles.testimonial_para}`}>
-                      I don’t wear makeup very often, but when I do I go for a
+                      I dont wear makeup very often, but when I do I go for a
                       natural, no-makeup look. This skin tint and concealer
                       gives exactly that. It helps even out my skin tone and
                       looks very natural.

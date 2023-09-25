@@ -11,29 +11,36 @@ import {
 } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import styles from "./header.module.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Image from "next/image";
 import { MdLogout, MdSearch, MdMenu } from "react-icons/md";
 import { BiSolidUser } from "react-icons/bi";
+import Link from "next/link";
 
 function Header() {
   const stickyHeader = useRef();
   useEffect(() => {
     const fixedHeader = () => {
-      const mainHeader = document.getElementById('mainHeader')
-      let clientHeight = stickyHeader.current.clientHeight
+      const mainHeader = document.getElementById("mainHeader");
+      let clientHeight = stickyHeader.current.clientHeight;
       if (document.body.scrollTop > clientHeight) {
-        mainHeader.classList.add('fixedTop')
+        mainHeader.classList.add("fixedTop");
       } else {
-        mainHeader.classList.remove('fixedTop')
+        mainHeader.classList.remove("fixedTop");
       }
-    }
-    window.addEventListener('scroll', fixedHeader,true)
-  }, [window.screenY])
+    };
+    window.addEventListener("scroll", fixedHeader, true);
+  }, [window.screenY]);
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className={`${styles.header} `} ref={stickyHeader} id="mainHeader">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className={`${styles.header} `}
+          ref={stickyHeader}
+          id="mainHeader"
+        >
           <Container>
             <Navbar.Brand href="/">
               <Image src={logo} alt="logo" height={90} />
@@ -53,22 +60,22 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="mx-auto">
-                  <Link to="/">
+                  <Link href="/">
                     <Nav.Link href="#home" className={styles.navLink}>
                       Home
                     </Nav.Link>
                   </Link>
-                  <Link to="/about">
+                  <Link href="/about">
                     <Nav.Link href="/about" className={styles.navLink}>
                       Chat
                     </Nav.Link>
                   </Link>
-                  <Link to="/about">
+                  <Link href="/about">
                     <Nav.Link href="/about" className={styles.navLink}>
-                    Scan Your Skin
+                      Scan Your Skin
                     </Nav.Link>
                   </Link>
-                  <Link to="/contact">
+                  <Link href="/contact">
                     <Nav.Link href="/contact" className={styles.navLink}>
                       Login
                     </Nav.Link>

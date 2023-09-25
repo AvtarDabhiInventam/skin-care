@@ -1,7 +1,11 @@
 "use client";
-import Header from "@/components/header/header";
+// import Header from "@/components/header/header";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("@/components/header/header"), {
+  ssr: false,
+});
 import "../styles/globals.scss";
-import { BrowserRouter } from "react-router-dom";
 import Footer from "@/components/footer/footer";
 
 export default function RootLayout({ children }) {
@@ -15,7 +19,7 @@ export default function RootLayout({ children }) {
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
+          charSet="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -25,11 +29,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <BrowserRouter>
-          <Header />
-          {children}
-          <Footer />
-        </BrowserRouter>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

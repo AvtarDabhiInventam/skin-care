@@ -20,7 +20,7 @@ const Avtar = () => {
                   consequuntur voluptatum
                 </p>
                 <Button variant="primary" className="common-btn">
-                  Buy Now
+                  Scan Now
                 </Button>
               </div>
             </Col>

@@ -12,7 +12,7 @@ const InnerBanner = () => {
         <Image src={aboutbannerimg} alt="about us" width={1920} height={1000} />
         <div className={`${styles.banner_contain_div}`}>
             <h2 className={`${styles.banner_heading}`}>A new PHILOSOPHY on SKINCARE.</h2>
-            <Button className="common-btn mt-4 bg-white" variant="light">buy now</Button>
+            <Button className="common-btn mt-4 bg-white" variant="light">Scan now</Button>
         </div>
       </div>
     </>
