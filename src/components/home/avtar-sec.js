@@ -26,7 +26,7 @@ const Avtar = () => {
             </Col>
             <Col md={5}>
               <div className={`${styles.avtar_img_div}`}>
-                <Image src={avtarImg} height={700} width={600} />
+                <Image src={avtarImg} height={700} width={600} alt="avatar"/>
               </div>
             </Col>
             

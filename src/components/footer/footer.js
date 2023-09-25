@@ -21,7 +21,7 @@ function Footer() {
         <Row className={`${styles.top_footer_div}`}>
           <Col xs={12} sm={6} md={6} lg={3} >
            <div className={`${styles.footer_mob_space_div}`}>
-           <Image src={logo} height={110} />
+           <Image src={logo} height={110} alt="logo"/>
             <p className="common-para mt-4">
               Lorem ipsum dolorc sacsa sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur

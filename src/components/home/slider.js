@@ -17,6 +17,7 @@ function Slider() {
                 src={banner1}
                 fluid
                 style={{ objectFit: "cover" }}
+                alt="banner"
               />
               <Carousel.Caption
                 data-aos="fade-down"
@@ -37,6 +38,7 @@ function Slider() {
                 src={banner1}
                 fluid
                 style={{ objectFit: "cover" }}
+                alt="banner"
               />
 
               <Carousel.Caption
@@ -56,6 +58,7 @@ function Slider() {
                 src={banner1}
                 fluid
                 style={{ objectFit: "cover" }}
+                alt="banner"
               />
 
               <Carousel.Caption
@@ -81,7 +84,7 @@ function Slider() {
             <Col xs lg="8">
               <Card className={`${styles.testimonial_box_div} flex-row`}>
                 <div className={`${styles.testimonial_img_div}`}>
-                  <Image variant="top" src={testimonial1} width={240} />
+                  <Image variant="top" src={testimonial1} width={240} alt="testimonial"/>
                 </div>
                 <Card.Body className={`${styles.testimonial_contain_div}`}>
                   <Card.Text className={`${styles.testimonial_para}`}>
