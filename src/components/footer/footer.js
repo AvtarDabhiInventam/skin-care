@@ -17,15 +17,17 @@ function Footer() {
       style={{ backgroundColor: "#fff" }}
     >
       <Container>
-        <Row className="mt-5">
+        <Row className={`${styles.top_footer_div}`}>
           <Col xs={12} sm={6} md={6} lg={3} >
-            <Image src={logo} height={110} />
-            <p className="mt-2">
+           <div className={`${styles.footer_mob_space_div}`}>
+           <Image src={logo} height={110} />
+            <p className="common-para mt-4">
               Lorem ipsum dolorc sacsa sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum.
             </p>
             <Button variant="primary" className="common-btn">Contact us</Button>
+           </div>
           </Col>
           <Col xs={12} sm={6} md={6} lg={3}>
               <div className={styles.footer_list}>
@@ -63,12 +65,11 @@ function Footer() {
               </div>
             </Col>
         </Row>
-        <hr />
       </Container>
       <Container>
         <Row>
           <Col md={8} sm={6} xs={12}>
-            <p class="copyright-text">
+            <p className={`${styles.copyright_text}`}>
               Copyright &copy; 2023 All Rights Reserved by
               <a href="#copyright"> Inventam Company</a>
             </p>

@@ -45,6 +45,11 @@ h2 {
 
 .navbar-toggler {
   background: #ECDEC1;
+  padding: 0px;
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  line-height: inherit;
 }
 
 .navbar-toggler:focus {
@@ -77,11 +82,11 @@ h2 {
 }
 
 .common-btn {
-  min-width: 250px;
+  min-width: 200px;
   text-align: center;
-  padding: 28px 35px;
+  padding: 18px 25px;
   border-radius: 0px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -193,6 +198,15 @@ h2 {
   }
   .rowgap_30 {
     row-gap: 30px;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  .left-mob-space-div {
+    padding: 35px 15px 35px 30px !important;
+  }
+  .right-mob-space-div {
+    padding: 35px 30px 35px 15px !important;
   }
 }
 

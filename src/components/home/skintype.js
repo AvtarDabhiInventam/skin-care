@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const SkinType = () => {
   return (
-    <section className="common-padding">
+    <section>
       <Container>
       <h2 className="section-heading">Do you struggle with</h2>
       </Container>
@@ -19,7 +19,7 @@ const SkinType = () => {
           </div>
         </Col>
         <Col xs={12} lg={6} md={6} className="ps-0">
-          <div className="p-5 d-flex flex-column align-items-start justify-content-center h-100">
+          <div className="p-5 d-flex flex-column align-items-start justify-content-center h-100 left-mob-space-div">
             <h3 className="text-capitalize font-roboto mb-0 common_sec_heading">
               <span>Acne</span> Skin
             </h3>
@@ -30,9 +30,9 @@ const SkinType = () => {
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row className="column-reverse">
         <Col xs={12} lg={6} md={6} className="pe-0">
-          <div className="p-5 d-flex flex-column align-items-start justify-content-center h-100">
+          <div className="p-5 d-flex flex-column align-items-start justify-content-center h-100 right-mob-space-div">
             <h3 className="text-capitalize font-roboto mb-0 common_sec_heading">
               <span>Dry</span> Skin
             </h3>
@@ -55,7 +55,7 @@ const SkinType = () => {
           </div>
         </Col>
         <Col xs={12} lg={6} md={6} className="ps-0">
-          <div className="p-5 d-flex flex-column align-items-start justify-content-center h-100">
+          <div className="p-5 d-flex flex-column align-items-start justify-content-center h-100 left-mob-space-div">
             <h1 className="text-capitalize font-roboto mb-0 common_sec_heading">
               <span>Psoriasis</span> Skin
             </h1>
