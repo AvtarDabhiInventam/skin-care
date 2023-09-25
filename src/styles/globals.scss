@@ -58,11 +58,9 @@ h2 {
 
 .offcanvas{
     width: 100% !important;
-    height: 100%;
     background: #ECDEC1;
-    position: fixed;
-    display: flex;
-    pointer-events: none;
+    -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    transition: opacity .35s, visibility .35s, height .35s
 }
 
 .navbar-nav{

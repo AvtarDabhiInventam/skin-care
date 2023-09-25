@@ -66,9 +66,9 @@ function Header() {
         </Navbar.Collapse>
       </Navbar> */}
       {[false].map((expand) => (
-        <Navbar key={expand} expand={expand} className={`${styles.header}`}>
+        <Navbar key={expand} expand={expand} className={`${styles.header} bg-body-tertiary`}>
           <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="#">
               <Image src={logo} alt="logo" height={90} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}>
