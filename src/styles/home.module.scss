@@ -1,6 +1,6 @@
 .carousel {
     .carouselCaption{
-        top: 40%;
+        top: 32%;
         h1{
             font-size: 90px;
             text-transform: uppercase;
@@ -11,6 +11,24 @@
         }
     }
 }
+.carousel {
+    img {
+        height: 100vh;
+    }
+}
+.carousel_items {
+    position: relative;
+}
+.carousel_items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171B1A;
+    opacity: 0.2;
+}
 
 .productCard{
     border: 0;
@@ -19,5 +37,263 @@
     }
     .productCard_Title{
         font-size: 30px;
+    }
+}
+
+.client_review_div {
+    margin-bottom: 100px;
+    margin-top: -130px;
+}
+.testimonial_box_div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #F0F0F0;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 0px;
+}
+.testimonial_contain_div {
+    padding: 20px 25px;
+}
+.testimonial_img_div {
+    min-width: 196px;
+}
+.testimonial_para {
+    color: #6D6D6D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.client_name {
+    color: #C0335D;
+    font-family: 'Unica One', cursive;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about_product_div {
+    position: relative;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.about_product_div::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/about_product.png');
+    height: 750px;
+    width: 1200px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+}
+.about_product_contain_box {
+    border: 1px solid #F0F0F0;
+    background-color: #ffffff;
+    padding: 90px;
+    position: relative;
+    z-index: 1;
+    h6 {
+        color: #171B1A;
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+    button {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .testimonial_img_div {
+        min-width: 85px;
+    }
+    .testimonial_para {
+        font-size: 15px;
+    }
+    .client_name {
+        font-size: 20px;
+    }
+    .client_review_div {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .carousel {
+        img {
+            height: 500px;
+        }
+    }
+    .carousel {
+        .carouselCaption{
+            top: 30%;
+            h1{
+                font-size: 40px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .about_product_div {
+        height: 500px;
+        align-items: end;
+        width: 100%;
+        margin-bottom: 140px;
+    }
+    .about_product_div::before {
+        height: 500px;
+        width: 100%;
+        background-position: top center;
+        top: 0px;
+        left: 0px;
+    }
+    .about_product_contain_box {
+        padding: 35px 30px;
+        top: 130px;
+        h6 {
+            font-size: 26px;
+        }
+        button {
+            margin-top: 25px;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .client_review_div {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .carousel {
+        img {
+            height: 500px;
+        }
+    }
+    .carousel {
+        .carouselCaption{
+            top: 32%;
+            h1{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .about_product_div {
+        height: 500px;
+        align-items: end;
+        width: 100%;
+        margin-bottom: 180px;
+    }
+    .about_product_div::before {
+        height: 500px;
+        width: 100%;
+        background-position: top center;
+        top: 0px;
+        left: 0px;
+    }
+    .about_product_contain_box {
+        padding: 35px 30px;
+        top: 130px;
+        max-width: 450px;
+        margin: 0 auto;
+        h6 {
+            font-size: 26px;
+        }
+        button {
+            margin-top: 25px;
+        }
+    }
+    .about_product_div {
+        margin-bottom: 140px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+    .client_review_div {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .carousel {
+        img {
+            height: 550px;
+        }
+    }
+    .carousel {
+        .carouselCaption{
+            top: 32%;
+            h1{
+                font-size: 50px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .about_product_div {
+        height: 550px;
+    }
+    .about_product_div::before {
+        height: 550px;
+        width: 100%;
+        max-width: 70%;
+    }
+    .about_product_contain_box {
+       padding: 40px 50px;
+        h6 {
+            font-size: 26px;
+        }
+        button {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+    .client_review_div {
+        margin-bottom: 80px;
+    }
+    .carousel {
+        .carouselCaption{
+            top: 32%;
+            h1{
+                font-size: 68px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .about_product_div {
+        height: 650px;
+    }
+    .about_product_div::before {
+        height: 650px;
+        width: 100%;
+        max-width: 70%;
+    }
+    .about_product_contain_box {
+       padding: 75px;
     }
 }

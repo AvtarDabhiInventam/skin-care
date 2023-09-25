@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Row, Col, Carousel, Card } from "react-bootstrap";
+import { Button, Row, Col, Carousel, Card, Container } from "react-bootstrap";
 import banner1 from "../../images/banner-1.png";
 import testimonial1 from "../../images/testimonial-1.png";
 import Image from "next/image";
@@ -11,7 +11,7 @@ function Slider() {
       <Row className="max-height">
         <Col xs={12}>
           <Carousel indicators={false} className={`${styles.carousel}`}>
-            <Carousel.Item>
+            <Carousel.Item  className={`${styles.carousel_items}`}>
               <Image
                 className="d-block w-100"
                 src={banner1}
@@ -26,12 +26,12 @@ function Slider() {
               >
                 <h1> Love your skin, love yourself </h1>
                 <p>Quality skincare products for men and women to your door</p>
-                <Button variant="light" className="btn-white">
+                <Button variant="light" className="common-btn">
                   Buy Now
                 </Button>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className={`${styles.carousel_items}`}>
               <Image
                 className="d-block w-100"
                 src={banner1}
@@ -45,12 +45,12 @@ function Slider() {
               >
                 <h1>Second slide label</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <Button variant="light" className="btn-white">
+                <Button variant="light" className="common-btn">
                   Buy Now
                 </Button>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className={`${styles.carousel_items}`}>
               <Image
                 className="d-block w-100"
                 src={banner1}
@@ -67,7 +67,7 @@ function Slider() {
                   Praesent commodo cursus magna, vel scelerisque nisl
                   consectetur.
                 </p>
-                <Button variant="light" className="btn-white">
+                <Button variant="light" className="common-btn">
                   Buy Now
                 </Button>
               </Carousel.Caption>
@@ -75,24 +75,30 @@ function Slider() {
           </Carousel>
         </Col>
       </Row>
-      <Row  className="justify-content-md-center">
-        <Col xs lg="4">
-          <Card className="flex-row">
-            <div>
-            <Image variant="top" src={testimonial1} width={240}/>
-            </div>
-            <Card.Body>
-              <Card.Text>
-                I don’t wear makeup very often, but when I do I go for a
-                natural, no-makeup look. This skin tint and concealer gives
-                exactly that. It helps even out my skin tone and looks very
-                natural.
-              </Card.Text>
-              <Card.Title>- Scarlett Blacke</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+      <div className={`${styles.client_review_div} `}>
+        <Container>
+          <Row className="justify-content-md-center">
+            <Col xs lg="8">
+              <Card className={`${styles.testimonial_box_div} flex-row`}>
+                <div className={`${styles.testimonial_img_div}`}>
+                  <Image variant="top" src={testimonial1} width={240} />
+                </div>
+                <Card.Body className={`${styles.testimonial_contain_div}`}>
+                  <Card.Text className={`${styles.testimonial_para}`}>
+                    I don’t wear makeup very often, but when I do I go for a
+                    natural, no-makeup look. This skin tint and concealer gives
+                    exactly that. It helps even out my skin tone and looks very
+                    natural.
+                  </Card.Text>
+                  <Card.Title className={`${styles.client_name}`}>
+                    - Scarlett Blacke
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 }
