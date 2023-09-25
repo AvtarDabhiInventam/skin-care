@@ -112,6 +112,31 @@
         margin-top: 40px;
     }
 }
+.avtar_sec_div {
+    background-color: #F7F7F7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 1 !important;
+}
+.avtar_img_div {
+    img {
+        // max-width: 190px;
+    }
+}
+.avtar_contain_div {
+    h6 {
+        color: #171B1A;
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
 
 
 @media (max-width: 767px) {
@@ -168,6 +193,14 @@
         button {
             margin-top: 25px;
         }
+    }
+    .avtar_sec_div { 
+        .about_shape_img {
+            display: none !important;
+        }
+    }
+    .avtar_img_div {
+        margin-top: 30px;
     }
 }
 
