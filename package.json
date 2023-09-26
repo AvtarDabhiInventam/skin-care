@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@amraneze/react-instagram-login": "^4.0.0",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.2",
     "eslint": "8.49.0",
@@ -20,6 +21,7 @@
     "react-facebook-login": "^4.1.1",
     "react-icons": "^4.11.0",
     "react-slick": "^0.29.0",
+    "react-social-login": "^3.4.17",
     "reactjs-social-login": "^2.6.3",
     "sass": "^1.67.0"
   }
