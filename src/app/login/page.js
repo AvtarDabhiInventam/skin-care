@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 import FacebookLogin from "react-facebook-login";
 
-const InstagramLogin = () => {
+const InstagramLoginPage = () => {
   const responseFacebook = async (response) => {
     console.log("response", response);
     if (response.status !== "unknown") {
@@ -37,9 +37,9 @@ const InstagramLogin = () => {
   );
 };
 
-export default InstagramLogin;
+export default InstagramLoginPage;
 
-// Success Response
+// Success Response- Facebook
 // {
 //   "name": "Uttam Dodiya",
 //   "picture": {
